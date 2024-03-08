@@ -1,0 +1,82 @@
+[
+    {
+        "id": 2,
+        "sequence": 2,
+        "img": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2023/01/double-emphasis.jpg?w=1200&ssl=1",
+        "tags": [
+            "emphasis",
+            "italic",
+            "semantics"
+        ],
+        "title": "The Double Emphasis Thing",
+        "abstract": "I used to have this boss who loved, loved, loved to emphasize words. This was way back before we used a WYSIWYG editors and I’d have to handcode that crap.",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023"
+        }
+    },
+    {
+        "id": 3,
+        "sequence": 3,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/gradient-shadows.png",
+        "tags": [
+            "box-shadow",
+            "gradients",
+            "shadow"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023"
+        }
+    },
+    {
+        "id": 4,
+        "sequence": 4,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/gradient-shadows.png",
+        "tags": [
+            "box-shadow",
+            "gradients",
+            "shadow"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023"
+        }
+    },
+    {
+        "id": 5,
+        "sequence": 5,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/gradient-shadows.png",
+        "tags": [
+            "box-shadow",
+            "gradients",
+            "shadow"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023"
+        }
+    },
+    {
+        "id": 6,
+        "sequence": 6,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/gradient-shadows.png",
+        "tags": [
+            "box-shadow",
+            "gradients",
+            "shadow"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023"
+        }
+    }
+]

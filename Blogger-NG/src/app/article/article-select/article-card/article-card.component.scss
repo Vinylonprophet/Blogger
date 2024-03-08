@@ -1,0 +1,69 @@
+.mini-card {
+  min-width: 250px;
+  min-height: 350px;
+  background: linear-gradient(85deg, #434343, #262626);
+  box-shadow: -2rem 0 3rem -2rem #000;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: -1.5rem;
+  transition: transform 0.2s;
+  transition-timing-function: ease;
+  position: relative;
+  z-index: 0;
+
+  & .date {
+    color: rgb(156, 163, 175);
+    font-weight: 300;
+  }
+
+  & .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  & .tags {
+    color: rgb(251, 146, 60);
+    font-weight: 600;
+  }
+
+  & .author {
+    height: auto;
+    margin: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+
+    & .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      & img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+      }
+    }
+
+    & .name {
+      margin-left: 1rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.mini-card:hover {
+  margin-right: 25px;
+  transform: translate(-.2rem, -.5rem) rotate(3deg);
+  transition: .2s;
+  transform-origin: 100% 0%;
+}

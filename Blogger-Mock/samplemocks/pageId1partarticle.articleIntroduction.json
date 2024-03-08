@@ -1,0 +1,111 @@
+[
+    {
+        "id": 0,
+        "sequence": 0,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/gradient-shadows.png",
+        "tags": [
+            "box-shadow",
+            "gradients",
+            "shadow"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    },
+    {
+        "id": 1,
+        "sequence": 1,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/wordpress-fonts.png",
+        "tags": [
+            "fonts",
+            "google fonts",
+            "WordPress"
+        ],
+        "title": "Managing Fonts in WordPress Block Themes",
+        "abstract": "Fonts are a defining characteristic of the design of any site. That includes WordPress themes, where it’s common for theme developers to integrate a service like Google Fonts into the WordPress Customizer settings for a “classic” PHP-based theme. That hasn’t …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    },
+    {
+        "id": 2,
+        "sequence": 2,
+        "img": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2023/01/double-emphasis.jpg?w=1200&ssl=1",
+        "tags": [
+            "emphasis",
+            "italic",
+            "semantics"
+        ],
+        "title": "The Double Emphasis Thing",
+        "abstract": "I used to have this boss who loved, loved, loved to emphasize words. This was way back before we used a WYSIWYG editors and I’d have to handcode that crap.",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    },
+    {
+        "id": 3,
+        "sequence": 3,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/react-facepalm.png",
+        "tags": [
+            "learning",
+            "react"
+        ],
+        "title": "5 Mistakes I Made When Starting My First React Project",
+        "abstract": "You know what it’s like to pick up a new language or framework. Sometimes there’s great documentation to help you find your way through it. But even the best documentation doesn’t cover absolutely everything. And when you work with something …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Mar 10, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    },
+    {
+        "id": 4,
+        "sequence": 4,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/clock-sin-cos-trig.png",
+        "tags": [
+            "cos()",
+            "math",
+            "sin()"
+        ],
+        "title": "Different Ways to Get CSS Gradient Shadows",
+        "abstract": "It's a question I hear asked quite often: Is it possible to create shadows from gradients instead of sol'id' colors? There is no specific CSS property that does this (believe me, I've looked) and any blog post you find about …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 10, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    },
+    {
+        "id": 5,
+        "sequence": 5,
+        "img": "https://css-tricks.com/wp-content/uploads/2023/02/react-lemons.jpg",
+        "tags": [
+            "DX",
+            "javascript framework",
+            "third-party",
+            "user testing",
+            "ux"
+        ],
+        "title": "Healthcare, Selling Lemons, and the Price of Developer Experience",
+        "abstract": "Every now and then, a one blog post is published and it spurs a reaction or response in others that are, in turn, published as blogs posts, and a theme starts to emerge. That’s what happened this past week and …",
+        "author": {
+            "name": "Vinylon",
+            "date": "on Feb 9, 2023",
+            "avatar": "../../../assets/icons/avatar.jpg"
+        },
+        "link": "assets/md/You-dont-know-js.md"
+    }
+]

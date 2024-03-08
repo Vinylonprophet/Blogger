@@ -1,0 +1,23 @@
+<div class="site-header">
+  <div class="site-name" routerLink="">Vinylon's blog</div>
+  <ul class="site-classify">
+    <li class="classify-main" (click)="navPart(title)" *ngFor="let title of navContent">
+      <a [href]="title?.link" *ngIf="title?.link" target="_blank">
+        {{ title.main }}
+      </a>
+      <div *ngIf="!title?.link">
+        {{ title.main }}
+      </div>
+      <ul class="classify-minor">
+        <li class="classify-minor-title" *ngFor="let subtitle of title.subtitle; let i = index;"
+          [ngStyle]="{ 'border-top': i === 0 ? '0' : '' }">
+          {{ subtitle }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="stie-search" (click)="loadComponent()">
+    <img src="../../../assets/icons/search.svg" class="h-2/3 w-2/3 bg-cover bg-no-repeat bg-center" alt="search">
+  </div>
+</div>
+<ng-template #container></ng-template>

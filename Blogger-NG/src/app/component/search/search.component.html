@@ -1,0 +1,71 @@
+<div class="popup-bg">
+  <div class="popup-window">
+    <div class="popup-header">
+      <form action="" class="search">
+        <div class="search-icon">
+          <img src="assets/icons/search-gray.svg" alt="">
+        </div>
+        <input type="text" id="search" class="search-input" placeholder="Search ..." #search>
+      </form>
+      <button class="button" (click)="close()">
+        <ng-content></ng-content>
+        <div style="width: 1rem; height: 1rem;">
+          <img src="assets/icons/delete.svg" alt="">
+        </div>
+      </button>
+    </div>
+    <div class="popup-main">
+      <div style="display: flex;">
+        <div class="content">
+          <div style="margin-top: 1rem;">
+            <div>
+              <h2>Showing popular results</h2>
+            </div>
+            <div class="result" *ngFor="let item of searchResult">
+              <div class="article-des">
+                <div class="title">
+                  <span>{{ item.title }}</span>
+                </div>
+                <div class="details">
+                  <span>{{ item.abstract }}</span>
+                </div>
+              </div>
+              <div class="article-img">
+                <img [src]="item.img" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="load-bg">
+            <div class="load-btn">Load More</div>
+          </div>
+        </div>
+        <!-- <div class="filter">
+          <div style="margin-top: 1rem;">
+            <div>
+              <h2>Filter Options</h2>
+            </div>
+            <div style="margin-top: 1rem;" *ngFor="let item of filterOption">
+              <h3>{{item?.classify}}</h3>
+              <div class="option" *ngFor="let option of item?.options">
+                <input type="checkbox" [value]="option" #checkboxes>
+                <label for="">{{option}}&nbsp;({{72}})</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+      <!-- <div class="popup-footer">
+      <div class="avatar">
+        <img src="assets/icons/avatar.jpg" alt="avatar" style="border-radius: 100%;">
+      </div>
+      <span style="margin-left: 1rem; color: white; font-size: 16px;">Vinylon's&nbsp;Blog</span>
+    </div> -->
+    </div>
+    <div class="popup-footer">
+      <div class="avatar">
+        <img src="assets/icons/avatar.jpg" alt="avatar" style="border-radius: 100%;">
+      </div>
+      <span style="margin-left: 1rem; color: white; font-size: 16px;">Vinylon's&nbsp;Blog</span>
+    </div>
+  </div>

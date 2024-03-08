@@ -1,0 +1,98 @@
+.site-header {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2px white solid;
+  background: linear-gradient(to right, black, rgb(107, 114, 128, 1));
+
+  & .site-name {
+    width: auto;
+    color: white;
+    border-right: 2px white solid;
+    font-size: 1.875rem;
+    line-height: .75rem;
+    font-weight: 700;
+    float: left;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  & .site-classify {
+    height: 100%;
+    color: white;
+
+    & .classify-main {
+      height: 100%;
+      position: relative;
+      float: left;
+      padding: 0 1.5rem;
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 4rem;
+      font-weight: 700;
+      cursor: pointer;
+
+      & .classify-minor {
+        position: absolute;
+        display: none;
+        left: 50%;
+        translate: -50%;
+
+        & .classify-minor-title {
+          background-color: black;
+          padding: 0 1.25rem;
+          color: white;
+        }
+
+        & .classify-minor-title:hover {
+          cursor: pointer;
+          color: rgb(251, 146, 60, 1);
+          opacity: 0.9;
+          border-top: 2px white solid;
+          border-bottom: 2px white solid;
+        }
+      }
+    }
+
+    & .classify-main:hover .classify-minor {
+      display: block;
+    }
+
+    & .classify-main:hover {
+      color: rgb(251, 146, 60, 1);
+      background-color: rgba(209, 213, 219, 0.25);
+    }
+  }
+
+  & .stie-search {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    margin: 0 1rem;
+    margin-left: auto;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 66.66%;
+      height: 66.66%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+ul,
+li {
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+}

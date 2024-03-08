@@ -1,0 +1,184 @@
+.articles-and-sidebar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 3rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+
+  & .article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+
+    & .article-card {
+      background: #fff;
+      color: #474747;
+      border-radius: 8px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+      display: flex;
+      flex-direction: column;
+
+      & .article-thumbnail-wrap {
+        position: relative;
+
+        & img {
+          max-width: 100%;
+          cursor: pointer;
+        }
+
+        & img:hover {
+          opacity: 0.85;
+        }
+
+        & img.article-thumbnail {
+          height: 250px;
+          -o-object-fit: cover;
+          object-fit: cover;
+          width: 100%;
+          display: block;
+        }
+      }
+
+      & .article-article {
+        flex: 1;
+        position: relative;
+        z-index: 5;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        & .tags {
+          line-height: 1;
+          margin: 0 0 0.5rem;
+
+          & a {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ff7a18;
+            font-size: 0.66rem;
+            -webkit-margin-end: 0.66rem;
+            margin-inline-end: 0.66rem;
+            cursor: pointer;
+          }
+
+          & a:hover {
+            text-decoration: underline;
+          }
+        }
+
+        h2 {
+          margin: 0.5rem 0 0.5rem 0;
+          color: black;
+          cursor: pointer;
+        }
+
+        h2:hover {
+          color: gray;
+        }
+
+        & .card-content {
+          color: #474747;
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+
+        & .author {
+          height: auto;
+          display: flex;
+          align-items: center;
+          margin-top: auto;
+
+          & .avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            & img {
+              height: 100%;
+              width: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              border-radius: 100%;
+            }
+          }
+
+          & .name {
+            margin-left: 1rem;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            font-weight: 600;
+          }
+
+          & .date {
+            margin-left: 1rem;
+            color: rgb(156, 163, 175);
+            font-weight: 300;
+          }
+
+          & .video-button {
+            width: 100%;
+            font-style: normal;
+            background-color: #5e5e5e !important;
+            color: #fff !important;
+            border: 0;
+            border-bottom: 1px solid #262626;
+            border-right: 1px solid #262626;
+            box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
+            display: inline-block;
+            font-weight: 700;
+            line-height: 1.4;
+            text-transform: uppercase;
+            text-decoration: none !important;
+            border-radius: 4px !important;
+            white-space: nowrap;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            transition: .07s;
+            position: relative;
+          }
+        }
+      }
+    }
+
+  }
+
+  & .button {
+    width: 100%;
+    margin-top: 3rem;
+    font-style: normal;
+    background-color: #5e5e5e !important;
+    border: 0;
+    color: #fff !important;
+    border-bottom: 1px solid #262626;
+    border-right: 1px solid #262626;
+    box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    padding: 1rem 1.5rem;
+    position: relative;
+  }
+
+  & .paginator {
+    width: auto;
+    margin: 3rem auto 0 auto;
+    display: block;
+    font-weight: 700;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    position: relative;
+  }
+}
+
+@media (max-height: 700px) {
+  .article-thumbnail {
+    height: 150px;
+    width: 100%;
+  }
+}

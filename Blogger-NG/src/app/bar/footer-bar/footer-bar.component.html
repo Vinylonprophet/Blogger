@@ -1,0 +1,19 @@
+<footer class="footer-bar">
+  <div class="author">
+    <div class="name">Vinylon</div>
+    <p style="margin: 1.5rem 0;">
+      You can click the link below to visit Vinylon's github.
+    </p>
+    <a href="https://github.com/Vinylonprophet" target="_blank">
+      <button class="button">
+        SUBSCRIBE
+      </button>
+    </a>
+  </div>
+  <div class="classification-grid" *ngFor="let item of footerContent">
+    <div class="classification">
+      {{item?.classification}}
+    </div>
+    <div class="label" *ngFor="let label of item?.labels">{{label}}</div>
+  </div>
+</footer>

@@ -1,0 +1,27 @@
+[
+    {
+        "classification": "Book",
+        "labels": [
+            "你不知道的JavaScript",
+            "JavaScript高级语言设计",
+            "从优秀到卓越",
+            "如何让富婆爱上你"
+        ]
+    },
+    {
+        "classification": "Sponsor",
+        "labels": [
+            "MircoSoft",
+            "Google",
+            "CitiBank"
+        ]
+    },
+    {
+        "classification": "Game",
+        "labels": [
+            "游戏王",
+            "王者荣耀",
+            "坎特伯雷公主与骑士唤醒冠军之剑的奇幻冒险"
+        ]
+    }
+]

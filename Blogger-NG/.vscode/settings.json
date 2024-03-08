@@ -1,0 +1,28 @@
+{
+  "files.encoding": "utf8",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "typescript.check.npmIsInstalled": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "files.trimTrailingWhitespace": false,
+    "files.insertFinalNewline": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.guides.indentation": true
+}

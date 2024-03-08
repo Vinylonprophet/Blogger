@@ -1,0 +1,25 @@
+<div class="classify">
+  <form style="display: flex; justify-content: space-between;">
+    <select [(ngModel)]="selectedTag" [ngModelOptions]="{standalone: true}" class="classify-selector" id="tags" #selectTags>
+      <option value="{{item}}" *ngFor="let item of tags">{{item}}</option>
+    </select>
+  </form>
+
+  <div style="display: flex; align-items: center;">
+    <span class="article-data">
+      {{totalArticle}}&nbsp;&nbsp;Article
+    </span>
+    <div class="sort-button" (click)="isSort = !isSort">
+      Sorting
+    </div>
+  </div>
+
+  <form class="classify-sort" [ngStyle]="{display: isSort ? 'flex' : 'none'}">
+    <div style="margin-right: 1rem; font-weight: 700; font-size: 16px;">
+      Date&nbsp;:
+    </div>
+    <select class="sort-selector" id="sorts" #selectDateSort>
+      <option value="{{item}}" *ngFor="let item of datesorts">{{item}}</option>
+    </select>
+  </form>
+</div>

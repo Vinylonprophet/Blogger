@@ -1,0 +1,14 @@
+<article class="mini-card" [ngStyle]="{'box-shadow': this.isShadow === true? '':'none'}">
+  <p style="margin-bottom: 1rem;">
+    Article
+    <span class="date">{{ popularArticle.createdate | dateDisplay }}</span>
+  </p>
+  <h1 class="title">{{ popularArticle.title }}</h1>
+  <p class="tags">@ {{ popularArticle.tags | arrayWithoutComma }}</p>
+  <div class="author">
+    <div class="avatar">
+      <img [src]="popularArticle.author.avatar">
+    </div>
+    <div class="name">{{ popularArticle.author.authorname }}</div>
+  </div>
+</article>

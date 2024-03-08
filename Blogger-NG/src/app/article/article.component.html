@@ -1,0 +1,5 @@
+<div class="wrap">
+  <div class="title">{{currentPart | uppercase}}</div>
+  <app-article-classify [totalArticle]="totalArticle" (emitTag)="receiveTag($event)" (emitDateSort)="receiveDateSort($event)" (emitRefresh)="receiveRefresh($event)"></app-article-classify>
+  <app-article-introduction (emitArticles)="receiveArticles($event)" [currentPart]="currentPart" [selectedTag]="selectedTag" [selectedDateSort]="selectedDateSort" [refresh]="refresh"></app-article-introduction>
+</div>

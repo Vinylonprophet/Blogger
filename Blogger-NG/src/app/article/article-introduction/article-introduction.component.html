@@ -1,0 +1,37 @@
+<div class="articles-and-sidebar">
+  <div>
+    <div class="article-grid">
+      <article class="article-card" *ngFor="let item of article">
+        <div class="article-thumbnail-wrap" (click)="toDetail(item.id)">
+          <img width="1200" height="600" [src]="item?.imgl" class="article-thumbnail">
+        </div>
+        <div class="article-article">
+          <div class="tags">
+            <a *ngFor="let tags of item?.tags; let i = index;" (click)="clickAlert()">{{tags}}</a>
+          </div>
+          <h2 (click)="toDetail(item.id)">{{item?.title}}</h2>
+          <div class="card-content">
+            <p (click)="toDetail(item.id)">{{item?.abstract}}</p>
+          </div>
+          <div class="author" *ngIf="currentPart === 'article'">
+            <div class="avatar">
+              <img alt="avatar" [src]="item?.author?.avatar">
+            </div>
+            <div style="display: flex;">
+              <div class="name">{{item?.author?.authorname}}</div>
+              <div class="date">{{item?.createdate | dateDisplay}}</div>
+            </div>
+          </div>
+          <div class="author" *ngIf="currentPart === 'video' || currentPart === 'project'">
+            <a [href]="item.link" target="_blank" class="video-button">Watch the {{ currentPart }}</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <button class="button" *ngIf=this.isHomePage routerLink="/article/0">Keep browser more articles</button>
+    <app-paginator class="paginator" (previous)="updatePage($event)" (next)="updatePage($event)"
+      (navTo)="updatePage($event)" [totalPage]="this.totalPage" [pageArray]="this.pageArray"
+      [currentPage]="this.currentPage" *ngIf=!this.isHomePage></app-paginator>
+  </div>
+  <app-article-links></app-article-links>
+</div>

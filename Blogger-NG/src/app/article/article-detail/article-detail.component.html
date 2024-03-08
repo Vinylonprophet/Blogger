@@ -1,0 +1,25 @@
+<div class="markdown-wrap">
+  <div class="markdown-grid">
+    <div>
+      <div class="markdown-header">
+        <div>
+          <div class="markdown-label" *ngFor="let item of article?.tags">{{item}}</div>
+        </div>
+        <div class="markdown-title">{{article.title}}</div>
+        <div class="author">
+          <div class="avatar">
+            <img alt="avatar" [src]="article.author.avatar" alt="avatar">
+          </div>
+          <div style="display: flex;">
+            <div class="name">{{article.author.authorname}}</div>
+            <div class="date">{{article.createdate | dateDisplay}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="markdown-content">
+        <markdown [src]="article.link"></markdown>
+      </div>
+    </div>
+    <app-article-links></app-article-links>
+  </div>
+</div>

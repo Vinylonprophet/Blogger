@@ -1,0 +1,28 @@
+<div class="breadcrumbs">
+  <div class="wp_page_numbers">
+    <ul>
+      <li class="breadcrumbs-prev-page" *ngIf="this.currentPage !== 0" (click)="prePage()">
+        <div class="arrow">
+          <img src="../../../assets/icons/arrow.svg" style="transform: rotate(90deg);" alt="arrow-left">
+        </div>
+        <div>
+          Newer
+        </div>
+      </li>
+      <li class="list-number" (click)="toPage($event)" *ngFor="let item of pageArray; let i = index;"
+        [ngClass]="{'active-page': this?.currentPage === item, 'unactive-page': item === '...'}"
+        >
+        {{item | pageDisplay}}
+      </li>
+      <li class="breadcrumbs-next-page" *ngIf="this.currentPage !== this.totalPage -1" (click)="nextPage()" aria-disabled="false">
+        <div>
+          Older
+        </div>
+        <div class="arrow">
+          <img src="../../../assets/icons/arrow.svg" style="transform: rotate(270deg);" alt="arrow-right">
+        </div>
+      </li>
+    </ul>
+    <div style="float: none; clear: both;"></div>
+  </div>
+</div>

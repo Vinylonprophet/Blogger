@@ -1,0 +1,10 @@
+<div class="all-links">
+  <div class="single-links" *ngFor="let item of sponsor">
+    <div class="links">
+      <img [src]="item?.link" alt="link">
+    </div>
+    <div class="interlude">
+      {{ item?.description }}
+    </div>
+  </div>
+</div>

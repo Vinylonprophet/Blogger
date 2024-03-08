@@ -1,0 +1,18 @@
+<div class="wrap">
+  <section class="article">
+    <div class="popular-header header-card">
+      <h2 class="header-card-title" id="monthly-mixup-title">
+        Select<br>My<br>Articles
+      </h2>
+      <p class="header-card-sponsor">
+        Powered by
+        <br>
+        <a>Vinylon</a>
+      </p>
+    </div>
+    <div class="mini-card-grid">
+      <app-article-card *ngFor="let popularArticle of popularArticles; let isfirst= first;" [popularArticle]="popularArticle"
+        [isShadow]="!isfirst" routerLink="/detail/{{popularArticle?.id}}"></app-article-card>
+    </div>
+  </section>
+</div>

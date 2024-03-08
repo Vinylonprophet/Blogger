@@ -1,0 +1,87 @@
+.markdown-wrap {
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
+  position: relative;
+
+  & .markdown-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 3rem;
+    margin: 0 auto;
+
+    & .markdown-header {
+
+      & .markdown-label {
+        display: inline-block;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff9e67;
+        font-size: 0.66rem;
+        -webkit-margin-end: 0.88rem;
+        margin-inline-end: 0.88rem;
+        cursor: pointer;
+      }
+
+      & .markdown-label:hover {
+        text-decoration: underline;
+      }
+
+      & .markdown-title {
+        margin: 2rem 0;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 0 2px 2px rgb(0 0 0 / 75%);
+      }
+
+      & .author {
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+        color: white;
+
+        & .avatar {
+          width: 2.5rem;
+          height: 2.5rem;
+
+          & img {
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100%;
+          }
+        }
+
+        & .name {
+          margin-left: 1rem;
+          font-size: 1rem;
+          line-height: 1.25rem;
+          font-weight: 600;
+        }
+
+        & .date {
+          opacity: 85%;
+          margin-left: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    & .markdown-content {
+      margin: 2rem auto;
+      border-radius: 1rem;
+      padding: 0.5rem 3rem 1.5rem;
+      background-color: white;
+    }
+  }
+
+
+  h2 {
+    font-size: 60px;
+  }
+}
